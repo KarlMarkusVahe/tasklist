@@ -18,6 +18,10 @@ function addTask(e){
     a.className = 'blue-text text-darken-2 secondary-content'
     a.setAttribute('href', '#')
     li.appendChild(a)
+    const b = document.createElement("b")
+    b.appendChild(document.createTextNode(task))
+    b.style.display = "none"
+    li.appendChild(b)
     // add to list
     const ul = document.querySelector('ul')
     ul.appendChild(li)
